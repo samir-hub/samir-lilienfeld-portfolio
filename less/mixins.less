@@ -1,0 +1,40 @@
+// Mixins Here
+.customButton(@bg, @color, @width, @height, @fontsize){
+    background: @bg; 
+    color: @color;  
+    width: @width;
+    height: @height;
+    font-size: @fontsize;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+}
+
+.roundedImage(@roundness){
+    border-radius: @roundness; 
+}
+
+.alterImage(@flex){
+    display: @flex;
+}
+
+.make-keyframes(@name, @from, @to) {
+    @keyframes @name {
+      from{
+        filter: opacity(@from)
+      }
+      to{
+        filter: opacity(@to)
+      }
+    }
+}
+
+.make-keyframes2(@name, @distance){
+@keyframes @name {
+    to {
+      transform: translateY(@distance);
+    }
+  }
+
+}

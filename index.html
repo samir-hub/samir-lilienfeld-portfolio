@@ -1,46 +1,90 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
-    <title>Vanilla + Go API</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samir Lilienfeld</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:900|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
   </head>
+
   <body>
-    <h1>Welcome to a Static Site with Data from a Go API</h1>
-    <h2>
-      Deployed with
-      <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener"
-        >ZEIT Now</a
-      >!
-    </h2>
-    <p>
-      <a
-        href="https://github.com/zeit/now-examples/blob/master/vanilla-functions"
-        target="_blank"
-        rel="noreferrer noopener"
-        >This project</a
-      >
-      includes three files. A static <code>index.html</code> file as the
-      homepage, a static <code>style.css</code> file for styling, and a
-      <code>api/date.go</code> serverless function that returns the date on
-      invocation. See
-      <a href="/api/date.go"
-        ><code>api/date.go</code> for the Date API with Go</a
-      >.
-    </p>
-    <br />
-    <h3>The date according to Go is:</h3>
-    <p class="date">Loading date...</p>
-    <script>
-      function main() {
-        return fetch('/api/date.go')
-          .then(function(response) {
-            return response.text();
-          })
-          .then(function(date) {
-            document.querySelector('.date').textContent = date;
-          });
-      }
-      main();
-    </script>
+    <section class="nav" id="top-anchor" >
+      <h1>Samir Lilienfeld, Full-Stack Web Developer</h1>
+      <p>I am a student and Team Lead at Lambda School studying Full-Stack Web Development with a background in Petroleum Engineering and a track record of leadership and innovation. Check out my work!</p>
+      <img src="img/about-sam.PNG" alt="Image of Samir Lilienfeld">
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <a href="#" class="nav-home">Home</a>
+        <a href="#projects-anchor" class="nav-about">Projects</a>
+        <a href="#" class="nav-test">About Me</a>
+        <a href="#" class="nav-test">Contact</a>
+      </nav>
+    </section>
+    <div class="container home" id="projects-anchor">
+      <section class="projects">
+        <button class="arrow" onclick="window.location.href = '#top-anchor';">▲</button>
+        <div class="icon-bar">
+          <a href="https://twitter.com/SamirLilienfeld" class="twitter"><i class="fa fa-twitter"></i></a>  
+          <a href="https://www.linkedin.com/in/samir-hub/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/samir-hub" class="git-hub"><i class="fa fa-github"></i></a> 
+        </div>
+        <div class="menu">
+        </div>
+        <h1>Projects</h1>
+        <div class="project1">
+          <img src="img/ezgif.com-video-to-gif.gif" alt="GIF of forLifeFitness Project"></iframe> 
+            <h1>forLife Fitness</h1>
+            <p>
+              This application was built to help people track their workouts. Users can create an account and input their workout data. Users can also review, update and delete this data. 
+              I worked with five other team members and we completed the project in five days. I created the marketing page using HTML, CSS (LESS) and Git/GitHub.
+            </p> 
+            <a href="https://bw-weight-lifting-journal.github.io/Marketing-page/" class="projects-button">Explore</a>
+        </div>
+        <div class="project2">
+          <img src="img/ezgif.com-video-to-gif (1).gif" alt="GIF of Lambda Times Project" />
+          <h1>Lambda Times</h1>
+          <p>
+            This project demonstrates my knowledge of the DOM, JavaScript, arrays, HTTP GET requests and the axios library. The components that make up the home page are dynamic and obtained from a server. This project was created by me during a three-hour sprint. 
+          </p>
+          <a href="https://github.com/samir-hub/Sprint-Challenge-Applied-Javascript/pull/1" class="projects-button">Explore</a>
+        </div>
+
+        <div class="project3">
+            <img src="img/NPOFTD.PNG" alt="Picture of Nasa Photo of the Day Project"></iframe>
+            <h1>NASA Photo of the Day</h1>
+            <p>
+              This is a React App that fetches an image, a date and a description from the NASA Photo of the Day API. The image is updated daily. The app is styled using Semantic UI. 
+            </p>
+            <a href='https://nasa-photo-of-the-day.samirlilienfeld.now.sh' class="projects-button">Explore</a>
+          </div>
+          <div class="project4">
+            <img src="img/ezgif.com-video-to-gif (3).gif" alt="GIF of forLifeFitness Project"></iframe> 
+            <h1>FriendsList Project</h1>
+            <p>
+              This project was an exercise in utilizing authentication tokens to ensure that the user's list of friends is only rendered if the correct credentials are entered. I created this project in one afternoon. 
+            </p>
+            <a href="https://github.com/samir-hub/Auth-Friends/pull/1" class="projects-button">Explore</a>
+          </div>
+
+      </section>
+
+    </div>
+    <footer>
+      <p>Created by Samir Lilienfeld</p>
+    </footer>
   </body>
 </html>

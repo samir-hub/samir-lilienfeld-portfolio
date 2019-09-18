@@ -1,0 +1,127 @@
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+.nav {
+  max-width: 100%;
+  height: 100vh; 
+  margin: 0 auto;
+  background: linear-gradient(to bottom,#cc5500, #ff791a);
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  @media @tablet {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 3%;
+  }
+  p {
+    max-width: 50%;
+    margin-bottom: 1%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.9rem;
+    
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: scale;
+    flex-shrink: 2;
+    border-radius: 50%;
+    margin-bottom: 3%;
+  }
+
+  h1 {
+    font-family: 'Chivo', sans-serif;
+    
+    
+
+    font-style: italic;
+    font-size: 6rem;
+    margin-bottom: 1%;
+    @media @tablet {
+      width: 65%;
+      text-align: center;
+      margin-bottom: 2%;
+    }
+  }
+  .arrow{
+    // position: absolute;
+    // top: 80%;
+    // left: 50%;
+    margin-bottom: 3%;
+    transform: translate(-50%,-50%);
+    span {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-bottom: 5px solid @complementary;
+      border-right: 5px solid @complementary;
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 2s infinite;
+    }
+    span:nth-child(2){
+      animation-delay: -0.2s;
+    }
+    span:nth-child(3){
+      animation-delay: -0.4s;
+    }
+
+}
+  nav {
+    width: 60%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    @media @tablet {
+      margin-bottom: 3%;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    a {
+      margin: 0 2%;
+      width: 20%;
+      border: 1px solid white;
+      border-radius: 10px;
+      font-size: 2rem;
+      text-align: center;
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      text-decoration: none;
+      transition-duration: 300ms;
+      @media @tablet {
+        width: 10%;
+        font-size: 1.5rem;
+      }
+      &:hover {
+        // color: @complementary; 
+        border: 1px solid white;
+        background: @complementary;
+      }
+    }
+    .nav-test,
+    .nav-home,
+    .nav-about {
+      color: white;
+    }
+  }
+}
