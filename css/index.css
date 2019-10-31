@@ -458,6 +458,28 @@ footer {
   border: 2px solid #0077CC;
   background: #0077CC;
 }
+.home .resume {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .home .resume {
+    flex-direction: column;
+  }
+}
+.home .resume h1 {
+  width: 80%;
+  text-align: left;
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 5%;
+  margin-top: 2%;
+}
 .container .about {
   display: flex;
   flex-wrap: wrap;
