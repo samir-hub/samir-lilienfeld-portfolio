@@ -1,7 +1,7 @@
 // Home Content
 
 .home {
-  background: linear-gradient(to bottom, #ff791a, #ff791a, @complementary);
+  background: linear-gradient(to bottom, #ff791a, #ff791a);
   max-width: 100%;
 
   // button {
@@ -70,6 +70,7 @@
         height: 400px;
         object-fit: scale;
         flex-shrink: 2;
+        box-shadow: -2px -3px 5px rgba(0, 0, 0, 1);
       }
     }
 
@@ -85,6 +86,9 @@
       border-radius: 10px;
       height: 40px;
       size: 10px;
+      @media @tablet {
+        display: none;
+      }
     }
     .icon-bar {
       position: fixed;
@@ -162,7 +166,7 @@
       justify-content: center;
       text-decoration: none;
       transition-duration: 300ms;
-      padding: 5px;
+      padding: 10px;
       background: none;
       font-family: "Source Sans Pro", sans-serif;
       color: white;
@@ -179,7 +183,7 @@
     }
   }
 
-  .resume{
+  .contact{
     width: 100%;
     margin: 0 auto;
     display: flex;

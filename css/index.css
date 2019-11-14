@@ -186,7 +186,7 @@ p {
   background: linear-gradient(to bottom, #cc5500, #ff791a);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 800px) {
@@ -200,23 +200,16 @@ p {
 }
 .nav p {
   max-width: 50%;
-  margin-bottom: 1%;
+  padding-bottom: 5%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.9rem;
-}
-.nav img {
-  width: 200px;
-  height: 200px;
-  object-fit: scale;
-  flex-shrink: 2;
-  border-radius: 50%;
-  margin-bottom: 3%;
 }
 .nav h1 {
   font-family: 'Chivo', sans-serif;
   font-style: italic;
   font-size: 6rem;
   margin-bottom: 1%;
+  margin-top: 10%;
 }
 @media (max-width: 800px) {
   .nav h1 {
@@ -245,22 +238,16 @@ p {
 .nav .arrow span:nth-child(3) {
   animation-delay: -0.4s;
 }
-.nav nav {
+.nav .navigation {
   width: 60%;
   height: 5%;
   display: flex;
-  justify-content: center;
   margin-bottom: 1%;
+  margin-top: 5%;
 }
 @media (max-width: 800px) {
-  .nav nav {
-    margin-bottom: 3%;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
 }
-.nav nav a {
+.nav .navigation a {
   margin: 0 2%;
   width: 20%;
   border: 1px solid white;
@@ -274,18 +261,17 @@ p {
   transition-duration: 300ms;
 }
 @media (max-width: 800px) {
-  .nav nav a {
-    width: 10%;
-    font-size: 1.5rem;
+  .nav .navigation a {
+    margin: 0 10%;
   }
 }
-.nav nav a:hover {
-  border: 1px solid white;
+.nav .navigation a:hover {
+  border: 1px solid #0077CC;
   background: #0077CC;
 }
-.nav nav .nav-test,
-.nav nav .nav-home,
-.nav nav .nav-about {
+.nav .navigation .nav-test,
+.nav .navigation .nav-home,
+.nav .navigation .nav-about {
   color: white;
 }
 footer {
@@ -299,7 +285,7 @@ footer {
   bottom: 0;
 }
 .home {
-  background: linear-gradient(to bottom, #ff791a, #ff791a, #0077CC);
+  background: linear-gradient(to bottom, #ff791a, #ff791a);
   max-width: 100%;
 }
 .home .projects {
@@ -357,6 +343,7 @@ footer {
   height: 400px;
   object-fit: scale;
   flex-shrink: 2;
+  box-shadow: -2px -3px 5px #000000;
 }
 .home .projects .arrow {
   background-color: #0077CC;
@@ -370,6 +357,11 @@ footer {
   border-radius: 10px;
   height: 40px;
   size: 10px;
+}
+@media (max-width: 800px) {
+  .home .projects .arrow {
+    display: none;
+  }
 }
 .home .projects .icon-bar {
   position: fixed;
@@ -443,7 +435,7 @@ footer {
   justify-content: center;
   text-decoration: none;
   transition-duration: 300ms;
-  padding: 5px;
+  padding: 10px;
   background: none;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
@@ -458,7 +450,7 @@ footer {
   border: 2px solid #0077CC;
   background: #0077CC;
 }
-.home .resume {
+.home .contact {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -466,11 +458,11 @@ footer {
   flex-wrap: wrap;
 }
 @media (max-width: 500px) {
-  .home .resume {
+  .home .contact {
     flex-direction: column;
   }
 }
-.home .resume h1 {
+.home .contact h1 {
   width: 80%;
   text-align: left;
   font-size: 6rem;
