@@ -275,14 +275,17 @@ p {
   color: white;
 }
 footer {
-  color: #22283B;
-  background: #8D7E83;
+  color: darkslategray;
+  background: #F0F2F5;
   padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   bottom: 0;
+}
+footer .footer-text {
+  font-size: 1.3rem;
 }
 .home {
   background: linear-gradient(to bottom, #ff791a, #ff791a);
@@ -348,6 +351,11 @@ footer {
   width: auto;
   height: 400px;
   box-shadow: none;
+}
+.home .projects div .seventh-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
 }
 .home .projects .arrow {
   background-color: #0077CC;
