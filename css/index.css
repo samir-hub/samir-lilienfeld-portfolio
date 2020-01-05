@@ -343,7 +343,11 @@ footer {
   height: 400px;
   object-fit: scale;
   flex-shrink: 2;
-  box-shadow: -2px -3px 5px #000000;
+}
+.home .projects div .mood-bloom-img {
+  width: auto;
+  height: 400px;
+  box-shadow: none;
 }
 .home .projects .arrow {
   background-color: #0077CC;
