@@ -250,7 +250,7 @@ p {
 .nav .navigation a {
   margin: 0 2%;
   width: 20%;
-  border: 1px solid white;
+  border: 1px solid #f6f8f6;
   border-radius: 10px;
   font-size: 2rem;
   text-align: center;
@@ -272,20 +272,30 @@ p {
 .nav .navigation .nav-test,
 .nav .navigation .nav-home,
 .nav .navigation .nav-about {
-  color: white;
+  color: #f6f8f6;
 }
 footer {
   color: darkslategray;
   background: #F0F2F5;
   padding: 20px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   bottom: 0;
+  text-decoration: none;
 }
 footer .footer-text {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: darkslategray;
+  margin-bottom: 5px;
+}
+footer .footer-citation {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: darkslategray;
 }
 .home {
   background: linear-gradient(to bottom, #ff791a, #ff791a);
@@ -438,7 +448,7 @@ footer .footer-text {
 .home .projects .projects-button {
   margin: 2% 0;
   width: 20%;
-  border: 2px solid white;
+  border: 2px solid #f6f8f6;
   border-radius: 10px;
   font-size: 3rem;
   text-align: center;
@@ -450,7 +460,7 @@ footer .footer-text {
   padding: 10px;
   background: none;
   font-family: "Source Sans Pro", sans-serif;
-  color: white;
+  color: #f6f8f6;
 }
 @media (max-width: 800px) {
   .home .projects .projects-button {
@@ -554,9 +564,11 @@ footer .footer-text {
   margin-bottom: 2%;
 }
 .form-div {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #DFE0DF;
 }
 .form-div .form {
   width: 100%;
@@ -572,10 +584,11 @@ footer .footer-text {
 .form-div .form .input-div .input-title {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
+  font-size: 25px;
 }
 .form-div .form .input-div .input {
   margin: 10px 0;
-  width: 50%;
+  width: 60%;
   height: 30px;
   padding: 5px;
   border: none;
