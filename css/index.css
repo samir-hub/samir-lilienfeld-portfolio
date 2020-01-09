@@ -208,12 +208,24 @@ p {
 .nav .nav-title {
   font-family: 'Chivo', sans-serif;
   font-style: italic;
-  font-size: 6rem;
-  margin-bottom: 1%;
+  font-size: 8rem;
   margin-top: 10%;
 }
 @media (max-width: 800px) {
   .nav .nav-title {
+    width: 65%;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+}
+.nav .nav-second-title {
+  font-family: 'Chivo', sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+@media (max-width: 800px) {
+  .nav .nav-second-title {
     width: 65%;
     text-align: center;
     margin-bottom: 2%;
@@ -244,7 +256,7 @@ p {
   height: 5%;
   display: flex;
   margin-bottom: 1%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 @media (max-width: 800px) {
 }
