@@ -210,7 +210,7 @@ p {
   .nav .nav-text {
     font-size: 2.4rem;
     margin-top: 15%;
-    margin-bottom: 15%;
+    margin-bottom: 25%;
     max-width: 90%;
   }
 }
@@ -339,15 +339,26 @@ footer .footer-citation {
     flex-direction: column;
   }
 }
-.home .projects h1 {
+.home .projects .projects-title {
   width: 80%;
   text-align: left;
   font-size: 6rem;
   font-weight: bold;
-  margin-bottom: 2%;
+  padding-bottom: 5%;
   font-family: "Quicksand", sans-serif;
   margin-left: 5%;
   margin-top: 2%;
+}
+@media (max-width: 550px) {
+  .home .projects .projects-title {
+    width: 100%;
+    text-align: left;
+    font-size: 4rem;
+    padding-left: 5%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-family: "Quicksand", sans-serif;
+  }
 }
 .home .projects div {
   display: flex;
@@ -365,17 +376,43 @@ footer .footer-citation {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    border: 1px dashed #8D7E83;
   }
 }
-.home .projects div h1 {
+.home .projects div .project-title {
+  width: 80%;
+  text-align: left;
   font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+@media (max-width: 550px) {
+  .home .projects div .project-title {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-family: "Quicksand", sans-serif;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
 }
 .home .projects div p {
   padding: 0 5%;
   padding-top: 0;
   width: 80%;
   font-size: 2rem;
+}
+@media (max-width: 550px) {
+  .home .projects div p {
+    padding: 0 5%;
+    padding-top: 0;
+    width: 90%;
+    font-size: 1.8rem;
+  }
 }
 .home .projects div img {
   width: 600px;
@@ -385,8 +422,8 @@ footer .footer-citation {
 }
 @media (max-width: 550px) {
   .home .projects div img {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
   }
 }
 .home .projects div .mood-bloom-img {
@@ -481,6 +518,8 @@ footer .footer-citation {
 .home .projects .project3,
 .home .projects .project4 {
   display: flex;
+  margin: 0;
+  padding-bottom: 10%;
 }
 .home .projects .projects-button {
   margin: 2% 0;
@@ -499,10 +538,18 @@ footer .footer-citation {
   font-family: "Source Sans Pro", sans-serif;
   color: #f6f8f6;
 }
-@media (max-width: 800px) {
+@media (max-width: 550px) {
   .home .projects .projects-button {
-    width: 10%;
-    font-size: 1.5rem;
+    margin: 2% 0;
+    width: 40%;
+    border: 2px solid #f6f8f6;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
 }
 .home .projects .projects-button:hover {
