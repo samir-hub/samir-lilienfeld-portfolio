@@ -159,7 +159,7 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .container {
     max-width: 100%;
     width: 100%;
@@ -205,17 +205,22 @@ p {
   font-size: 2.9rem;
   text-align: center;
 }
+@media (max-width: 550px) {
+  .nav .nav-text {
+    font-size: 2rem;
+    margin-top: 10%;
+  }
+}
 .nav .nav-title {
   font-family: 'Chivo', sans-serif;
   font-style: italic;
   font-size: 8rem;
   margin-top: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 550px) {
   .nav .nav-title {
-    width: 65%;
-    text-align: center;
-    margin-bottom: 2%;
+    font-size: 4rem;
+    margin-top: 10%;
   }
 }
 .nav .nav-second-title {
@@ -321,7 +326,7 @@ footer .footer-citation {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .home .projects {
     flex-direction: column;
   }
@@ -345,12 +350,12 @@ footer .footer-citation {
   transition-duration: 300ms;
   margin-bottom: 2%;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .home .projects div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     border: 1px dashed #8D7E83;
   }
@@ -369,6 +374,12 @@ footer .footer-citation {
   height: 400px;
   object-fit: scale;
   flex-shrink: 2;
+}
+@media (max-width: 550px) {
+  .home .projects div img {
+    width: 300px;
+    height: 200px;
+  }
 }
 .home .projects div .mood-bloom-img {
   width: auto;
@@ -406,6 +417,11 @@ footer .footer-citation {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+@media (max-width: 800px) {
+  .home .projects .icon-bar {
+    display: none;
+  }
 }
 .home .projects .icon-bar a {
   display: block;
@@ -492,7 +508,7 @@ footer .footer-citation {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .home .contact {
     flex-direction: column;
   }
@@ -512,7 +528,7 @@ footer .footer-citation {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .container .about {
     flex-direction: column;
   }
@@ -528,7 +544,7 @@ footer .footer-citation {
 .container .about div:hover {
   background: #8D7E83;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .container .about div {
     display: flex;
     flex-direction: column;
@@ -553,7 +569,7 @@ footer .footer-citation {
   border-radius: 100%;
   padding-right: 5%;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .container .about div img {
     width: 300px;
     height: 300px;

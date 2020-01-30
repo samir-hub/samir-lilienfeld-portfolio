@@ -51,7 +51,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         border: 1px dashed @nav-bg;
       }
@@ -70,6 +70,10 @@
         height: 400px;
         object-fit: scale;
         flex-shrink: 2;
+        @media @phone {
+          width: 300px;
+          height: 200px;
+        }
       }
       .mood-bloom-img {
         width: auto;
@@ -107,6 +111,9 @@
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+      @media @tablet {
+        display: none;
+      }
       a {
         display: block;
         text-align: center;
