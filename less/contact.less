@@ -1,50 +1,79 @@
-.form-div {
-  width: 70%;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: #DFE0DF;
-  .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .input-div{
+.contact {
+  padding-bottom: 40px;
+  .projects-title {
+    width: 80%;
+    text-align: left;
+    font-size: 6rem;
+    font-weight: bold;
+    padding-bottom: 5%;
+    font-family: "Quicksand", sans-serif;
+    margin-left: 5%;
+    margin-top: 2%;
+    @media @phone {
+      width: 100%;
+      text-align: left;
+      font-size: 4rem;
+      padding-left: 5%;
+      font-weight: bold;
+      margin-bottom: 2%;
+      font-family: "Quicksand", sans-serif;
+    }
+  }
+  .form-div {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #dfe0df;
+    @media @phone {
+      width: 80%;
+      
+    }
+    .form {
+      width: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      .input-title {
+      flex-direction: column;
+      align-items: center;
+      .input-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        width: 50%;
+        margin-bottom: 2%;
+        .input-title {
+          font-family: "Quicksand", sans-serif;
+          font-weight: bold;
+          font-size: 25px;
+        }
+        .input {
+          margin: 10px 0;
+          width: 60%;
+          height: 30px;
+          padding: 5px;
+          border: none;
+          border-radius: 5px;
+        }
+        .textarea {
+          height: 80px;
+        }
+      }
+      .form-button {
+        border: none;
+        border-radius: 20px;
+        padding: 15px;
+        width: 120px;
         font-family: "Quicksand", sans-serif;
         font-weight: bold;
-        font-size: 25px;
-      }
-      .input {
-        margin: 10px 0;
-        width: 60%;
-        height: 30px;
-        padding: 5px;
-        border: none;
-        border-radius: 5px;
-      }
-      .textarea {
-        height: 80px;
-      }
-    }
-    .form-button {
-      border: none;
-      border-radius: 20px;
-      padding: 15px;
-      width: 120px;
-      font-family: "Quicksand", sans-serif;
-      font-weight: bold;
-      font-size: 20px;
-      background: @complementary;
+        font-size: 20px;
+        background: @complementary;
         color: white;
-      &:hover {
-        background: #F0F2F5;
-        color: black;
+        &:hover {
+          background: #f0f2f5;
+          color: black;
+        }
       }
     }
-    
   }
 }

@@ -519,7 +519,14 @@ footer .footer-citation {
 .home .projects .project4 {
   display: flex;
   margin: 0;
-  padding-bottom: 10%;
+}
+@media (max-width: 550px) {
+  .home .projects .project1,
+  .home .projects .project2,
+  .home .projects .project3,
+  .home .projects .project4 {
+    padding-bottom: 10%;
+  }
 }
 .home .projects .projects-button {
   margin: 2% 0;
@@ -555,28 +562,6 @@ footer .footer-citation {
 .home .projects .projects-button:hover {
   border: 2px solid #0077CC;
   background: #0077CC;
-}
-.home .contact {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-@media (max-width: 550px) {
-  .home .contact {
-    flex-direction: column;
-  }
-}
-.home .contact h1 {
-  width: 80%;
-  text-align: left;
-  font-size: 6rem;
-  font-weight: bold;
-  margin-bottom: 2%;
-  font-family: "Quicksand", sans-serif;
-  margin-left: 5%;
-  margin-top: 2%;
 }
 .container .about {
   display: flex;
@@ -647,30 +632,63 @@ footer .footer-citation {
   color: white;
   margin-bottom: 2%;
 }
-.form-div {
-  width: 70%;
+.contact {
+  padding-bottom: 40px;
+}
+.contact .projects-title {
+  width: 80%;
+  text-align: left;
+  font-size: 6rem;
+  font-weight: bold;
+  padding-bottom: 5%;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+@media (max-width: 550px) {
+  .contact .projects-title {
+    width: 100%;
+    text-align: left;
+    font-size: 4rem;
+    padding-left: 5%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-family: "Quicksand", sans-serif;
+  }
+}
+.contact .form-div {
+  width: 50%;
   margin: 0 auto;
   padding: 30px;
   border-radius: 20px;
-  background-color: #DFE0DF;
+  background-color: #dfe0df;
 }
-.form-div .form {
+@media (max-width: 550px) {
+  .contact .form-div {
+    width: 80%;
+  }
+}
+.contact .form-div .form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.form-div .form .input-div {
+.contact .form-div .form .input-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  width: 50%;
+  margin-bottom: 2%;
 }
-.form-div .form .input-div .input-title {
+.contact .form-div .form .input-div .input-title {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 25px;
 }
-.form-div .form .input-div .input {
+.contact .form-div .form .input-div .input {
   margin: 10px 0;
   width: 60%;
   height: 30px;
@@ -678,10 +696,10 @@ footer .footer-citation {
   border: none;
   border-radius: 5px;
 }
-.form-div .form .input-div .textarea {
+.contact .form-div .form .input-div .textarea {
   height: 80px;
 }
-.form-div .form .form-button {
+.contact .form-div .form .form-button {
   border: none;
   border-radius: 20px;
   padding: 15px;
@@ -692,7 +710,7 @@ footer .footer-citation {
   background: #0077CC;
   color: white;
 }
-.form-div .form .form-button:hover {
-  background: #F0F2F5;
+.contact .form-div .form .form-button:hover {
+  background: #f0f2f5;
   color: black;
 }
