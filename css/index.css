@@ -189,12 +189,13 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 550px) {
   .nav {
     width: 100%;
     margin: 0 auto;
     flex-direction: column;
-    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
     padding-top: 3%;
   }
 }
@@ -207,8 +208,10 @@ p {
 }
 @media (max-width: 550px) {
   .nav .nav-text {
-    font-size: 2rem;
-    margin-top: 10%;
+    font-size: 2.4rem;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    max-width: 90%;
   }
 }
 .nav .nav-title {
@@ -220,7 +223,8 @@ p {
 @media (max-width: 550px) {
   .nav .nav-title {
     font-size: 4rem;
-    margin-top: 10%;
+    width: 100%;
+    text-align: center;
   }
 }
 .nav .nav-second-title {
@@ -231,9 +235,10 @@ p {
 }
 @media (max-width: 800px) {
   .nav .nav-second-title {
-    width: 65%;
+    width: 85%;
     text-align: center;
     margin-bottom: 2%;
+    font-size: 2rem;
   }
 }
 .nav .arrow {
@@ -263,7 +268,10 @@ p {
   margin-bottom: 1%;
   margin-top: 2%;
 }
-@media (max-width: 800px) {
+@media (max-width: 550px) {
+  .nav .navigation {
+    display: none;
+  }
 }
 .nav .navigation a {
   margin: 0 2%;
