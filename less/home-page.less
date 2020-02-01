@@ -234,13 +234,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
         padding: 10px;
       }
       &:hover {
-        // color: @complementary;
         border: 2px solid @complementary;
         background: @complementary;
+        @media @phone {
+          background: none;
+          border: 2px solid rgb(246, 248, 246);
+        }
       }
     }
   }

@@ -42,10 +42,16 @@
         justify-items: center;
         width: 50%;
         margin-bottom: 2%;
+        @media @phone {
+          width: 80%;
+        }
         .input-title {
           font-family: "Quicksand", sans-serif;
           font-weight: bold;
           font-size: 25px;
+          @media @phone {
+            display: none;
+          }
         }
         .input {
           margin: 10px 0;
@@ -54,6 +60,9 @@
           padding: 5px;
           border: none;
           border-radius: 5px;
+          @media @phone {
+            width: 100%;
+          }
         }
         .textarea {
           height: 80px;
@@ -72,6 +81,10 @@
         &:hover {
           background: #f0f2f5;
           color: black;
+          @media @phone {
+            background: @complementary;
+            color: white;
+          }
         }
       }
     }

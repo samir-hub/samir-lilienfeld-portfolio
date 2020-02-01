@@ -210,7 +210,7 @@ p {
   .nav .nav-text {
     font-size: 2.4rem;
     margin-top: 15%;
-    margin-bottom: 25%;
+    margin-bottom: 20%;
     max-width: 90%;
   }
 }
@@ -563,6 +563,12 @@ footer .footer-citation {
   border: 2px solid #0077CC;
   background: #0077CC;
 }
+@media (max-width: 550px) {
+  .home .projects .projects-button:hover {
+    background: none;
+    border: 2px solid #f6f8f6;
+  }
+}
 .container .about {
   display: flex;
   flex-wrap: wrap;
@@ -683,10 +689,20 @@ footer .footer-citation {
   width: 50%;
   margin-bottom: 2%;
 }
+@media (max-width: 550px) {
+  .contact .form-div .form .input-div {
+    width: 80%;
+  }
+}
 .contact .form-div .form .input-div .input-title {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 25px;
+}
+@media (max-width: 550px) {
+  .contact .form-div .form .input-div .input-title {
+    display: none;
+  }
 }
 .contact .form-div .form .input-div .input {
   margin: 10px 0;
@@ -695,6 +711,11 @@ footer .footer-citation {
   padding: 5px;
   border: none;
   border-radius: 5px;
+}
+@media (max-width: 550px) {
+  .contact .form-div .form .input-div .input {
+    width: 100%;
+  }
 }
 .contact .form-div .form .input-div .textarea {
   height: 80px;
@@ -713,4 +734,10 @@ footer .footer-citation {
 .contact .form-div .form .form-button:hover {
   background: #f0f2f5;
   color: black;
+}
+@media (max-width: 550px) {
+  .contact .form-div .form .form-button:hover {
+    background: #0077CC;
+    color: white;
+  }
 }
