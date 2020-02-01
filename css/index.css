@@ -210,7 +210,7 @@ p {
   .nav .nav-text {
     font-size: 2.4rem;
     margin-top: 15%;
-    margin-bottom: 20%;
+    margin-bottom: 17%;
     max-width: 90%;
   }
 }
@@ -650,8 +650,7 @@ p {
   color: white;
 }
 .contact .form-div .form .form-button:hover {
-  background: #f0f2f5;
-  color: black;
+  background: #45a3e6;
 }
 @media (max-width: 550px) {
   .contact .form-div .form .form-button:hover {
