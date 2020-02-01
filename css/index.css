@@ -337,12 +337,11 @@ p {
   font-weight: bold;
   padding-bottom: 5%;
   font-family: "Quicksand", sans-serif;
-  margin-left: 5%;
   margin-top: 2%;
 }
 @media (max-width: 550px) {
   .home .projects .projects-title {
-    width: 100%;
+    width: 90%;
     text-align: left;
     font-size: 4rem;
     padding-left: 5%;
@@ -381,13 +380,12 @@ p {
 }
 @media (max-width: 550px) {
   .home .projects div .project-title {
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2%;
     font-family: "Quicksand", sans-serif;
-    margin-left: 5%;
     margin-top: 2%;
   }
 }
@@ -575,10 +573,9 @@ p {
 }
 @media (max-width: 550px) {
   .contact .projects-title {
-    width: 100%;
+    width: 90%;
     text-align: left;
     font-size: 4rem;
-    padding-left: 5%;
     font-weight: bold;
     margin-bottom: 2%;
     font-family: "Quicksand", sans-serif;
