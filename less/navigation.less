@@ -1,6 +1,7 @@
 @keyframes animate {
   0% {
     opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-20px, -20px);
     transform: rotate(45deg) translate(-20px, -20px);
   }
   50% {
@@ -8,6 +9,7 @@
   }
   100% {
     opacity: 0;
+    -webkit-transform: rotate(45deg) translate(20px, 20px);
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
@@ -72,6 +74,7 @@
     // top: 80%;
     // left: 50%;
     margin-bottom: 3%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     span {
       display: block;
@@ -79,6 +82,7 @@
       height: 30px;
       border-bottom: 5px solid @complementary;
       border-right: 5px solid @complementary;
+      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
       margin: -10px;
       animation: animate 2s infinite;
