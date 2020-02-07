@@ -245,6 +245,11 @@ p {
   margin-bottom: 3%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 550px) {
+  .nav .arrow {
+    display: none;
+  }
+}
 .nav .arrow span {
   display: block;
   width: 30px;
@@ -260,6 +265,24 @@ p {
 }
 .nav .arrow span:nth-child(3) {
   animation-delay: -0.4s;
+}
+.nav .arrow-mobile {
+  margin-bottom: 3%;
+  display: none;
+}
+@media (max-width: 550px) {
+  .nav .arrow-mobile {
+    display: block;
+  }
+}
+.nav .arrow-mobile span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #0077CC;
+  border-right: 5px solid #0077CC;
+  transform: rotate(45deg);
+  margin: -5px;
 }
 .nav .navigation {
   width: 60%;
