@@ -208,11 +208,14 @@ p {
 }
 @media (max-width: 550px) {
   .nav .nav-text {
-    font-size: 2.4rem;
-    margin-top: 15%;
+    font-size: 2.2rem;
+    margin-top: 10%;
     margin-bottom: 7%;
     max-width: 90%;
   }
+}
+.nav .nav-skills {
+  font-weight: bold;
 }
 .nav .nav-title {
   font-family: "Chivo", sans-serif;
@@ -222,7 +225,8 @@ p {
 }
 @media (max-width: 550px) {
   .nav .nav-title {
-    font-size: 4rem;
+    margin-top: 10%;
+    font-size: 4.5rem;
     width: 100%;
     text-align: center;
   }
